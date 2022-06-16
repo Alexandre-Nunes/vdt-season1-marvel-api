@@ -1,0 +1,24 @@
+{
+  "name": "vdt-season1-marvel-api",
+  "version": "1.0.0",
+  "description": "<h1 align=\"left\">     <img src=\".github/logo-stiker.svg\" width=\"250px\"> </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandre-Nunes/vdt-season1-marvel-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre-Nunes/vdt-season1-marvel-api/issues"
+  },
+  "homepage": "https://github.com/Alexandre-Nunes/vdt-season1-marvel-api#readme",
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.1.3",
+    "cypress": "^9.7.0"
+  }
+}
