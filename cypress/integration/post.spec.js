@@ -33,7 +33,7 @@ describe('POST / characters', function () {
             cy.postCharacter(character)
                 .then(function (response) {
                     expect(response.status).to.eql(400)
-                    expect(response.body.message).to.eql('Validation failed')
+                    expect(response.body.validation.body.message).to.eql('\"name\" is required')
                 })
         })
     
@@ -48,7 +48,7 @@ describe('POST / characters', function () {
             cy.postCharacter(character)
                 .then(function (response) {
                     expect(response.status).to.eql(400)
-                    expect(response.body.message).to.eql('Validation failed')
+                    expect(response.body.validation.body.message).to.eql('\"alias\" is required')
                 })
         })
     
@@ -63,7 +63,7 @@ describe('POST / characters', function () {
             cy.postCharacter(character)
                 .then(function (response) {
                     expect(response.status).to.eql(400)
-                    expect(response.body.message).to.eql('Validation failed')
+                    expect(response.body.validation.body.message).to.eql('\"team\" is required')
                 })
         })
     
@@ -78,11 +78,11 @@ describe('POST / characters', function () {
             cy.postCharacter(character)
                 .then(function (response) {
                     expect(response.status).to.eql(400)
-                    expect(response.body.message).to.eql('Validation failed')
+                    expect(response.body.validation.body.message).to.eql('\"active\" is required')
                 })
         })
     
-    });
+    })
 
   
 
